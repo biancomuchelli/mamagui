@@ -1,17 +1,24 @@
-﻿@page "/Componente cuatro tito"
+﻿@page "/ComponenteCuatro."
 
-<h1></h1> 
+<div> <label class="p-3 mb-2 bg-danger table-success">Nombre y monto por favor.</label></div>
+
+<input type="text" class="form-control" name="NombreDonante" @bind="Nombre" />
+<div> <br /> </div>
+
+<input type="number" class="form-control" name="MontoDonante" @bind="Monto" />
+
+<br />
 
 
 
 @code {
 
-        /*[Parameter]*/
-        /*public string Titulo { get; set; } = "Titulo con propiedad local del componente";*/ 
+    /*[Parameter]*/  
+    /*public string Titulo { get; set; } = "Titulo con propiedad local del componente";*/    
 
 
 
-        private string nombre;
+    private string nombre;
     private int monto;
 
     public string Nombre
@@ -40,6 +47,6 @@
 
 
 
-   }
+}
 
 
